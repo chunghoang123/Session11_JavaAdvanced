@@ -1,0 +1,15 @@
+Phần 1: Liệt kê kịch bản lỗi (Exception Scenarios)
+Trước khi lập trình, chúng ta cần lường trước các lỗi có thể xảy ra khi người dùng thao tác:
+
+Lỗi trùng khóa chính (Primary Key Violation): Người dùng nhập mã bác sĩ đã tồn tại trong hệ thống.
+
+Lỗi vượt quá độ dài cột (Data Truncation): Nhập tên chuyên khoa hoặc họ tên quá dài so với giới
+hạn VARCHAR đã khai báo trong DB.
+
+Lỗi sai định dạng dữ liệu (Input Mismatch): Hệ thống yêu cầu nhập số (Ví dụ: số lượng, ID) nhưng
+ người dùng lại nhập chữ.
+
+Lỗi kết nối (Connection Failure): Database bị tắt đột ngột hoặc thông tin đăng nhập trong DBContext
+    bị sai.
+
+Lỗi nhập liệu rỗng (Null Constraint): Các trường bắt buộc như name hoặc specialty bị để trống.
